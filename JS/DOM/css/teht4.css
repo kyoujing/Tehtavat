@@ -1,6 +1,6 @@
-li{
+ul{
     list-style-type: none;
 }
-li:nth-child(2n){
+ul:nth-child(2n){
     background-color: gray;
 }
