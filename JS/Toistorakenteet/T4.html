@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 4</title>
+</head>
+<body>
+<script>
+    'use strict';
+    let tulos, i, nopmaara, summa;
+    summa = 0;
+    nopmaara = prompt('Anna arpakuution lukumäärä: ');
+    for(i = 0; i<nopmaara; i++) {
+      tulos = Math.floor(Math.random() * 6) + 1;
+      document.write(tulos + '</br>');
+      summa += tulos;
+    }
+    document.write('Silmälukujen summa:' + summa)
+
+</script>
+</body>
+</html>

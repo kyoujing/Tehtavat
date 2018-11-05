@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 6</title>
+</head>
+<body>
+<script>
+  'use strict';
+  const HEITOT = 10000;
+  let i, tulos;
+  let npmaara = prompt('Anna arpakuutioiden lukumäärä: ');
+  let luk = prompt('Anna silmälukujen summa: ');
+  let lkm = 0;
+  for (i = 0; i < HEITOT; i++) {
+    tulos = 0;
+    for (let j = 0; j < npmaara; j++) {
+      tulos = (Math.floor(Math.random() * 6) + 1);
+    }
+    if (tulos == luk)
+      lkm++;
+  }
+
+  document.write('tulos:' + lkm / 10000 * 100);
+</script>
+</body>
+</html>

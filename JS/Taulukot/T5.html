@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T5</title>
+</head>
+<body>
+<script>
+    'use strict';
+    let luvut = [];
+    const times = 9999999;
+    let luku = 1;
+    for (let i = 0; i<times;i++){
+        if (luku != 0) {
+            luku = prompt('Anna luku väliltä 1...1000: ');
+            luvut.push(luku);
+        }
+        if (luku>1000 ){
+            document.write('Annettu luku on suurempi kuin 1000');
+            break;
+        }
+        else if(luku<1 ){
+            document.write('Annettu luku on pienempi kuin 1');
+            break;
+        }
+
+        if(luvut.includes(luku))
+          break;
+
+    }
+</script>
+</body>
+</html>

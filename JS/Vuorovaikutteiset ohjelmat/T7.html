@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 7</title>
+</head>
+<body>
+<script>
+    let saldo, korkoprosentti;
+    saldo = prompt('Anna saldomäärä');
+    korkoprosentti = prompt('Anna korkoprosentti')/100;
+    kertykor = saldo * korkoprosentti;
+    kasvsaldo = parseFloat(saldo) + parseFloat(kertykor);
+    document.write('Vuodessa kertyvän koron määrä: ' +kertykor.toFixed(2) +'€' +"<br />")
+    document.write('Saldosi: ' + kasvsaldo.toFixed(2) +'€')
+</script>
+</body>
+</html>

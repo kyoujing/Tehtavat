@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T7</title>
+</head>
+<body>
+<script>
+    'use strict';
+    let ehtolkm = prompt('Anna ehtokkaiden lukumäärä: ');
+    for (let i = 1; i<=ehtolkm;){
+        alert('Äänestysnumerosi on ' +i);
+        i++
+    }
+    let aanelkm = prompt('Anna äänestäjien lukumäärä: ');
+    let aanet;
+    let ehto = [];
+    for (let j = 1; j<=aanelkm;) {
+            aanet = prompt('Ketä äänestät?');
+            ehto[j] = aanet;
+        j++; }
+
+    let frequency = {};
+    let max = 0;
+    let result;
+    for(let v in ehto) {
+        frequency[ehto[v]]=(frequency[ehto[v]] || 0)+1;
+        if(frequency[ehto[v]] > max) {
+            max = frequency[ehto[v]];
+            result = ehto[v];
+        }
+    }
+    alert('Vaalien voittaja: '+result);
+
+
+</script>
+</body>
+</html>

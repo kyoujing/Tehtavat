@@ -1,0 +1,12 @@
+const kolmasO = document.getElementsByTagName('th')[2];
+kolmasO.remove();
+const eka = document.getElementsByTagName('td')[0];
+eka.innerHTML = 'Jingwang';
+const toka = document.getElementsByTagName('td')[1];
+toka.innerHTML = 'Jiang';
+const kolmas = document.getElementsByTagName('td')[2];
+kolmas.remove();
+const neljas = document.getElementsByTagName('td')[2];
+neljas.innerHTML = 'Hämeentie 28';
+const viides = document.getElementsByTagName('td')[3];
+viides.innerHTML = '1234567890';
