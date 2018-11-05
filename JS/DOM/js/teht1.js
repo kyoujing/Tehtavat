@@ -1,7 +1,7 @@
 const kolmasO = document.getElementsByTagName('th')[2];
 kolmasO.remove();
 const eka = document.getElementsByTagName('td')[0];
-eka.innerHTML = 'Jingwang';
+eka.innerHTML = 'Jing';
 const toka = document.getElementsByTagName('td')[1];
 toka.innerHTML = 'Jiang';
 const kolmas = document.getElementsByTagName('td')[2];
