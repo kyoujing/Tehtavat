@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    li{
+        border-style: solid;
+    }
+</style>
+<ul class="fruits">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li data-foodtype="squishy">Orange</li>
+    <li>Pear</li>
+    <li>Kiwi</li>
+    <li id="berry">Strawberry</li>
+</ul>
+<script>
+    'use strict';
+    document.getElementById('berry').style.backgroundColor = 'red';
+    document.querySelectorAll('li')[2].style.backgroundColor = 'orange';
+    const a = document.getElementsByTagName("li");
+    for(let i = 0; i<a.length ;i++){
+        console.log(a);
+        a[i].style.listStyleType = 'none';
+        a[i].style.width = '100px';
+        a[3].style.backgroundColor = 'green'
+    }
+
+</script>
+</body>
+</html>
