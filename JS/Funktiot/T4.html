@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T4</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+    'use strict';
+    function suurin() {
+        let abc = Math.max(luku1,luku2,luku3);
+        return abc;
+    }
+    let luku1 = prompt('Anna luku: ');
+    let luku2 = prompt('Anna luku: ');
+    let luku3 = prompt('Anna luku: ');
+    if(luku1 == luku2 || luku1 == luku3 || luku2 == luku3){
+        document.write('Kaksi lukua tai kaikki luvut ovat yhtäsuuria, ' +' kolmesta luvusta suurin luku on ' + suurin() +'.')
+    }
+    else{
+        document.write('Kolmesta luvusta suurin luku on '+ suurin()+'.')
+    }
+</script>
+</body>
+</html>
