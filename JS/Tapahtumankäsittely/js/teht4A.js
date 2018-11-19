@@ -13,22 +13,19 @@ const pics = [
   },
 ];
 
-const img1 = document.getElementsByTagName("tr")[0].innerHTML  ="<img src='"+ pics[0].thumb+"'/>";
-const img2 = document.getElementsByTagName("tr")[1].innerHTML  ="<img src='"+ pics[1].thumb+"'/>";
-const img3 = document.getElementsByTagName("tr")[2].innerHTML  ="<img src='"+ pics[2].thumb+"'/>";
+
 const img4 = document.getElementsByTagName("div")[0].innerHTML  ="<img src='"+ pics[0].big+"'/>";
 const img5 = document.getElementsByTagName("div")[0].innerHTML  ="<img src='"+ pics[1].big+"'/>";
 const img6 = document.getElementsByTagName("div")[0].innerHTML  ="<img src='"+ pics[2].big+"'/>";
 
-function show1() {
-  img4.document.getElementsByClassName("hidden")[0].style.visibility ='visible';
-}
-function show2() {
-  img5.document.getElementsByClassName("hidden")[0].style.visibility ='visible';
-}
-function show3() {
-  img6.document.getElementsByClassName("hidden")[0].style.visibility ='visible';
-}
-  img1.addEventListener("click", show1());
-  img2.addEventListener("click", show2());
-  img3.addEventListener("click", show3());
+document.getElementById("p1").addEventListener("click", function() {
+  img4.style.visibility = "visible";
+});
+
+document.getElementById("p2").addEventListener("click", function() {
+  img5.style.visibility = "visible";
+});
+
+document.getElementById("p3").addEventListener("click", function() {
+  img6.style.visibility = "visible";
+});
