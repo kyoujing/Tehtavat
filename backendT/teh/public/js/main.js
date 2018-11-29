@@ -110,6 +110,4 @@ const srm = document.querySelector
 
 frm.addEventListener('submit', sendForm);
 updatefrm.addEventListener('submit', sendUpdate);
-srm.addEventListener('submit', )
-
-getImages();
+srm.addEventListener('submit',searchImg );
