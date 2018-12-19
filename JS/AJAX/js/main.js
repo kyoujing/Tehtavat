@@ -10,7 +10,7 @@ button.addEventListener("submit", function hae(evt){
         let output = '<pre></pre>';
         data.forEach(function(show){
           console.log('show', show);
-        if (show.show.image === null){
+        if (show.show.image !== null){
             show.show.image.medium = 'https://www.freeiconspng.com/uploads/no-image-icon-21.png';
           }
           output += `<ul>
